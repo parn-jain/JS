@@ -1,0 +1,67 @@
+<html>
+    <title>
+        hello
+    </title>
+    <body>
+        <input type = "number" id="values" placeholder="enter the number to place here"></input>
+        <button onclick="add()">Add</button>
+        <button onclick="display()">Display</button>
+        <div id="display"></div>
+    </body>
+    <script>
+        let array = []
+        function add()
+        {
+            const nums = document.getElementById('values').value
+            array.push(nums)
+        }
+
+        function display()
+        {
+
+        }
+
+    </script>
+    
+</html>
+
+
+
+
+
+
+
+<!-- <html>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        <input type="number" id="values" placeholder="Enter the number to place here">
+        <button onclick="add()">Add</button>
+        <button onclick="display()">Display</button>
+        <div id="display"></div>
+
+        <script>
+            let array = [];
+
+            function add() {
+                const nums = document.getElementById('values').value;
+                if (nums !== "") {
+                    array.push(nums);
+                    document.getElementById('values').value = ""; // clear input
+                }
+            }
+
+            function display() {
+                const displayDiv = document.getElementById('display');
+                displayDiv.innerHTML = ""; // clear previous content
+
+                for (let i of array) {
+                    const newDiv = document.createElement("div");
+                    newDiv.textContent = i;
+                    displayDiv.appendChild(newDiv);
+                }
+            }
+        </script>
+    </body>
+</html> -->

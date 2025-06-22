@@ -1,0 +1,14 @@
+Executiun of JS Code :
+
+Exicuted in exicution context
+Exicution context is divided in 2 parts : Memory and Code
+
+Happens in 2 phases:
+Phase 1: Memory allocation (Initially variables are allocated with undefined and functions are allocated with lines of code in the funciton)
+Phase 2: Line by line Code Exicution where memory is allocated with acrual value 
+
+In case of calling of function , a new execution context is created in code box and same pricess is done, 
+after reaching to return statement , if give controll to original Exicution Conrexg and allocate memory to the variable that calls the function 
+
+THIS ALL THIGN IS MANAGED IN CALL STACK
+and in the botumn of the stack there is a GLobal Exicution context and when a new function is invoked and a new exicution context is created , it put that exicution context insode the stack

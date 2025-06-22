@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Size</title>
+</head>
+<body>
+    <h2>Resize the window to see the width and height</h2>
+    <p id="size"></p>
+
+    <script>
+
+        function updateSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            document.getElementById('size').textContent = `Width: ${width}px, Height: ${height}px`;
+        }
+
+        updateSize();    //to give the value of initial state
+
+        window.addEventListener('resize', updateSize);
+    </script>
+</body>
+</html>

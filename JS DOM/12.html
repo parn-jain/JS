@@ -1,0 +1,37 @@
+<!-- 12. Write a JavaScript program to highlight the bold words of the following 
+paragraph, on mouse over a certain link.
+Sample link and text :
+[On mouse over here bold words of the following paragraph will be highlighted]
+We have just started this section for the users (beginner to intermediate) 
+who want to work with various JavaScript problems and write scripts online 
+to test their JavaScript skill.
+ -->
+
+
+<html>
+    <head></head>
+    <title>
+        hover
+    </title>
+    <body>
+        <p>Hello everyone, my name is <strong>Parn Jain</strong> , I am at<strong> inMorphis</strong></p>
+        <a href="" onmouseover = add() onmouseout="remove()">IMP DETAILS</a>
+    </body>
+    <script>
+        const a= document.getElementsByTagName("strong")
+        function add()
+        {
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.color = 'red';
+            }
+        }
+        function remove()
+        {
+            for (let i = 0; i < a.length; i++) {
+                a[i].style.color = '';
+            }
+        }
+
+
+    </script>
+</html>

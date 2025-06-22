@@ -1,0 +1,36 @@
+<!-- 11. Write a JavaScript program to display a random image (clicking on a button) 
+from the following list.
+Sample Image information :
+"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", width: 
+"240", height: "160"
+"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", width: "320",
+height: "195"
+"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg", width: "500", 
+height: "343" -->
+
+
+<html>
+    <head></head>
+    <title>
+        fda
+    </title>
+    <body>
+        
+        <img src="http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg" width = "500" height = "343" alt="" srcset="">
+        <button onclick="changeImg()">Change Image</button>
+        <script>
+            function changeImg()
+            {
+
+                const array = [["http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+                "240", "160"], ["http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", "320","195"], ["http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg", "500", "343"]]
+                const image = document.getElementsByTagName("img")[0]
+                var rn = Math.floor(Math.random()*(3))
+                console.log(rn)
+                image.src = array[rn][0]
+                image.style.width = array[rn][1]+ "px"
+                image.style.height = array[rn][2]+ "px"
+            }
+        </script>
+    </body>
+</html>
