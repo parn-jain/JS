@@ -32,3 +32,9 @@ console.log(arr); // [1, 2]
 
 // filter() creates a new array with all the elements that pass the test (i.e., those that are not equal to 2 in this case).
 // Q:31
+
+
+
+
+    // let diff1 = array1.filter(val=>!array2.includes(val))
+    // let diff2 = array2.filter(val=>!array1.includes(val))

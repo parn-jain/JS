@@ -16,12 +16,18 @@
             array.push(nums)
         }
 
-        function display()
-        {
 
-        }
+function display() {
+            const displayDiv = document.getElementById('display');
+            displayDiv.innerHTML = ""; // Clear existing content
 
-    </script>
+            array.forEach(num => {
+                const line = document.createElement("div"); // Create a new line
+                line.textContent = num; // Set the number as text
+                displayDiv.appendChild(line); // Add to display area
+            });
+        }    
+        </script>
     
 </html>
 
